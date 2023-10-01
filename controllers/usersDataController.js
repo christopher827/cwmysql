@@ -13,7 +13,7 @@ emptyFields.push('email')
 }
 if (!age) {
 emptyFields.push('age')
-    }
+}
     if (!technology) {
         emptyFields.push('technology')
     }
