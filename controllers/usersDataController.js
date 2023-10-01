@@ -9,7 +9,7 @@ if (!fullname) {
 emptyFields.push('fullname')
 }
 if (!email) {
-        emptyFields.push('email')
+emptyFields.push('email')
     }
     if (!age) {
         emptyFields.push('age')
