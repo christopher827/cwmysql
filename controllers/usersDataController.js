@@ -6,7 +6,7 @@ const createUserData=async(req,res)=>{
 const {fullname,email,age,technology}=req.body
 let emptyFields=[]
 if (!fullname) {
-        emptyFields.push('fullname')
+emptyFields.push('fullname')
     }
     if (!email) {
         emptyFields.push('email')
