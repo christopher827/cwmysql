@@ -16,7 +16,7 @@ emptyFields.push('age')
 }
 if (!technology) {
 emptyFields.push('technology')
-    }
+}
     if (emptyFields.length>0) {
         return res.status(400).json({error:"please fill in all fields",emptyFields})
     }
