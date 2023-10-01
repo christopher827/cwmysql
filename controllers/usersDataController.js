@@ -8,7 +8,7 @@ let emptyFields=[]
 if (!fullname) {
 emptyFields.push('fullname')
 }
-    if (!email) {
+if (!email) {
         emptyFields.push('email')
     }
     if (!age) {
