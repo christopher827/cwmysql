@@ -18,7 +18,7 @@ if (!technology) {
 emptyFields.push('technology')
 }
 if (emptyFields.length>0) {
-    return res.status(400).json({error:"please fill in all fields",emptyFields})
+return res.status(400).json({error:"please fill in all fields",emptyFields})
     }
     if (!validator.isEmail(email)) {
         return res.status(400).json("Invalid email format")
