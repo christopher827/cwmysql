@@ -14,7 +14,7 @@ emptyFields.push('email')
 if (!age) {
 emptyFields.push('age')
 }
-    if (!technology) {
+if (!technology) {
         emptyFields.push('technology')
     }
     if (emptyFields.length>0) {
