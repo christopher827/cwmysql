@@ -26,7 +26,7 @@ if (existingEmail) {
 
 try {
 const salt=await bcrypt.genSalt(10) //random values(10) that adds additional complexity to the hashing process
-    const hash=await bcrypt.hash(password,salt) //hash the password collected from the user and adds the salt value to increase its complexity
+const hash=await bcrypt.hash(password,salt) //hash the password collected from the user and adds the salt value to increase its complexity
     const user=await User.create({email,password:hash}) //Creates a user with the provided email and the hashed value of the password
     const token=createToken(user._id)
     res.status(200).json({email,token})//This json executes if everything goes fine in this try block(sends back the entered email and the generated jwt token as response)
