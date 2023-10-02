@@ -22,7 +22,7 @@ return res.status(400).json({error:"please fill in all fields",emptyFields})
 }
 if (!validator.isEmail(email)) {
 return res.status(400).json("Invalid email format")
-    }    
+}    
     const exists=await UserData.findOne({email}) //Checks if the email is in our database
 
     if (exists) {
