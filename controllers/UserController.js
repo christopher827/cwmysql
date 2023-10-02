@@ -14,7 +14,7 @@ if (!email || !password || !name) {  //if any or the 3 fields is/are left blank
 return res.status(400).json("All field must be filled")
 }
 if (!validator.isEmail(email)) {
-    return res.status(400).json("Invalid email format")
+return res.status(400).json("Invalid email format")
 }
 if (!validator.isStrongPassword(password)) {
     return res.status(400).json("Password not strong enough")
