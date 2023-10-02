@@ -5,7 +5,7 @@ const jwt=require("jsonwebtoken")
 const nodemailer=require("nodemailer")
 
 const createToken=(_id)=>{
-    return jwt.sign({_id},process.env.SECRET,{expiresIn:'1d'})
+return jwt.sign({_id},process.env.SECRET,{expiresIn:'1d'})
 }
 //Signing up users
 const signupUser=async(req,res)=>{
