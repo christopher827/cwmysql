@@ -21,7 +21,7 @@ if (!validator.isStrongPassword(password)) {
 }
 const existingEmail=await User.findOne({email}) //Checks if the email is in our database
 if (existingEmail) {
-    return res.status(400).json({error:"Email already in use"})
+return res.status(400).json({error:"Email already in use"})
 }
 
 try {
